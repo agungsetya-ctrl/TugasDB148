@@ -22,7 +22,7 @@ RecyclerView.Adapter<RVAdapter.Holder>(){
     override fun getItemCount(): Int = arrayList!!.size
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.view.label_idfakultas.text = this.arrayList?.get(position)?.Id_fakultas.toString()
+        holder.view.label_idfakultas.text = this.arrayList?.get(position)?.id_fakultas.toString()
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         holder.view.label_kodefakultas.text = this.arrayList?.get(position)?.kode_fakultas
         holder.view.label_namafakultas.text = "Nama Fakultas : "+arrayList?.get(position)?.nama_fakultas
